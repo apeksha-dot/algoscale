@@ -1,0 +1,13 @@
+<h1>Name</h1>
+
+    <select style="margin-left: 50px; margin-bottom: 10px;" class="select" name="custom-select" id="inputGroupSelect03">
+        <% users.forEach(function(user){ %>
+        <option> <%= user.userId %> </option>
+        <% }) %>
+    </select>
+
+    <form style="margin-left: 50px; margin-bottom: 10px;" action="/new?_method=DELETE" method='POST'>
+<input class="btn btn-outline-secondary" type="submit" value='DELETE'>
+</form>
+
+<a style="margin-left: 50px; margin-bottom: 10px;" href="/users/logout" class="btn btn-secondary">Logout</a>
